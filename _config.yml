@@ -18,7 +18,7 @@ subtitle: |
   Resources to protect Hawai‘i from COVID-19
 email: contact@coronakiai.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Protecting Hawai‘i from the covid-19 threat
+  Resources to protect Hawai‘i from COVID-19
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://coronakiai.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: coronakiai
