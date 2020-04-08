@@ -539,4 +539,10 @@ h5 {
   &:hover {
     opacity: 1;
   }
+  @media screen and (max-width: 767px) {
+    filter: invert(1);
+    position: absolute;
+    left: 33px;
+    top: 37px
+  }
 }
