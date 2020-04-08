@@ -39,7 +39,11 @@
               addLinkClickEvent();
               window.twttr.widgets.load();
               window.instgrm.Embeds.process();
-              window.DISQUS.host._loadEmbed();
+              try {
+                window.DISQUS.host._loadEmbed();
+              } catch(e) {
+                
+              }
               history.pushState(null, null, target.pathname);
               document.querySelector('body').classList.remove('-searching');
             } else {
