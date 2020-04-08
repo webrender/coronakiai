@@ -195,6 +195,11 @@ div.jekyll-entry, blockquote.github-pull-request {
     text-align: center;
     margin-top: 20px; 
   }
+
+  table {
+    display: block;
+    overflow: scroll;
+  }
 }
 
 blockquote.github-pull-request {
@@ -542,9 +547,4 @@ h5 {
     left: 33px;
     top: 37px
   }
-}
-
-table {
-  display: block !important;
-  overflow: scroll;
 }
