@@ -193,9 +193,7 @@ div.jekyll-entry, blockquote.github-pull-request {
 
   &.welcome {
     text-align: center;
-    @media screen and (max-width: 767px) {
-      margin-top: 20px; 
-    }
+    margin-top: 20px; 
   }
 }
 
@@ -459,7 +457,6 @@ blockquote.github-pull-request {
 }
 
 .page-content {
-  margin-top: 20px;
   padding: 0 30px;
   z-index: 6;
   position: relative;
