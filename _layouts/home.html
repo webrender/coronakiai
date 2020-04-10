@@ -21,6 +21,9 @@ layout: default
     {% for post in paginator.posts %}
       <div class="content">
         <a href="{{ post.url }}" class="linkicon" title="{{ post.date }}"><img src="/assets/link.svg" class="linkicon" /></a>
+        {% if post.network == 'twitter' %}
+          {{ post.content }}
+        {% else %}
           <div class="jekyll-entry">
             <h3>{{ post.title }}</h3>
             {{ post.excerpt }}
@@ -28,6 +31,7 @@ layout: default
               <a href="{{ post.url }}">Read more&hellip;</a>
             {% endif %}
           </div>
+        {% endif %}
       </div>
     {% endfor %}
   </ul>
