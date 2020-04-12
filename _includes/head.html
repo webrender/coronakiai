@@ -66,4 +66,8 @@
     <meta content="{{ tag }}" property="article:tag">
     {% endfor %}
   {% endif %}
+
+  {% if site.tags != "" %}
+    {% include collecttags.html %}
+  {% endif %}
 </head>
