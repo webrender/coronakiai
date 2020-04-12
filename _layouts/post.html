@@ -3,22 +3,20 @@ layout: default
 ---
 <div class="search">
 </div>
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="post-header">
-    <p class="post-meta">
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
-  </header>
-
-  <div class="post-content -article" itemprop="articleBody">
+<div style="margin-top: 20px;">
+</div>
+<div class="content">
+    <a href="{{ page.url }}" class="linkicon" title="{{ page.date }}"><img src="/assets/link.svg" class="linkicon" /></a>
+    {% if page.network == 'twitter' or page.network == 'twitter_retweet' %}
+      {{ page.content }}
+    {% else %}
       <div class="jekyll-entry">
         <h3>{{ page.title }}</h3>
-        {{ page.content }}
+        {{ page.excerpt }}
+        {% if page.use_excerpt %}
+          <a href="{{ page.url }}">Read more&hellip;</a>
+        {% endif %}
       </div>
+    {% endif %}
   </div>
-
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
-</article>
+</div>

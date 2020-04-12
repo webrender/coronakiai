@@ -6,7 +6,7 @@ layout: default
 {% for post in site.tags[page.tag] %}
 <div class="content">
     <a href="{{ post.url }}" class="linkicon" title="{{ post.date }}"><img src="/assets/link.svg" class="linkicon" /></a>
-    {% if post.network == 'twitter' %}
+    {% if post.network == 'twitter' or post.network == 'twitter_retweet' %}
       {{ post.content }}
     {% else %}
       <div class="jekyll-entry">
